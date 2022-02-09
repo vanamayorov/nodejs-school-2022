@@ -1,6 +1,7 @@
 // Create a function searchSerial, which takes two parameters: 1 - an array of string or numeric values, 2 - searched value. 
 // The function should return a number - maximum count of serial entries of the given value.
 "use strict"
+
 const searchSerial = (arr, searchVal) => {
     let num = 0;
     if(!arr.includes(searchVal)) return num
