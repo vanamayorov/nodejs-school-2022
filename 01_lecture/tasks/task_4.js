@@ -3,14 +3,7 @@
 "use strict"
 
 const searchSerial = (arr, searchVal) => {
-    let num = 0;
-    if(!arr.includes(searchVal)) return num
-
-    for(let item of arr) {
-        if(item === searchVal) num++
-    }
-
-    return num
+    return arr.reduce((acc, curr) => searchVal === curr ? ++acc : acc, 0);
 }
 
 console.log(searchSerial([1, 2, 2, 3, 4, 5, 2], 2));
